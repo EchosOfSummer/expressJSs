@@ -38,8 +38,7 @@ app.get('/pokemon/:id', (request, response) => {
 })
 
 app.get('/type/:type', (request, response) => {
-    // response.sendFile('index.html', {root})
-    sendIndex(response)
+    response.sendFile('index.html', {root})
 })
 
 app.get('/api/v1/random-pokemon', (request, response) => {
