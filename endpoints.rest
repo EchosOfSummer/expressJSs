@@ -1,24 +1,39 @@
 
 ### Variables
 @url = http://localhost:3000/api/v1
-@type = grass
+@type = Grass
+
+@id = 6914fcfe08e0b0edf16d6867
+
+@name = IvySaur
+
+### All Pokemon
+GET {{url}}/pokemon/
+
+### PPokemon by Name
+GET {{url}}/pokemon/byName/{{name}}
+
+## Pokemon by ID
+GET {{url}}/pokemon/byId/{{id}}
 
 ### Random Pokemon
-GET {{url}}/random-pokemon
+GET {{url}}/pokemon/random
 
 ### Specific Pokemon
-GET {{url}}/pokemon/1
+GET {{url}}/pokemon/2
 
 ### Random with type
-GET {{url}}/random-pokemon/{{type}}
+GET {{url}}/pokemon/random/{{type}}
+
+
 
 
 ### Add a new pokemon
-POST {{url}}/add
+POST {{url}}/pokemon/add
 content-type: application/json
 
-{ 
-    "id": 11, 
-    "name": "Metapod", 
-    "type": "Bug" 
+{
+    "number": 12,
+    "name": "Butterfree",
+    "type": "Bug"
 }

@@ -11,6 +11,10 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "mongodb": "^6.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1"
   }
 }
